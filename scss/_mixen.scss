@@ -1,0 +1,74 @@
+@mixin texts($color: #333d4b) {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin title-texts($color2: #fefcf7) {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: $color2;
+}
+@mixin btn {
+  color: #fefcf7;
+  display: inline-block;
+  background-color: #0e8784;
+  border-radius: 6px;
+  padding: 15px 31px 16px 31px;
+  &:hover {
+    background-color: #66d2cf;
+  }
+  &:active {
+    background-color: #e2dedb;
+  }
+}
+@mixin links {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+  &:hover {
+    color: #333d4b;
+  }
+}
+@mixin bag-title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
+@mixin line {
+  max-width: 760px;
+  height: 2px;
+  background-color: #fdd6ba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 31px;
+}
+@mixin line__spans {
+  border: 2px solid $yashil;
+  border-radius: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 31px;
+  height: 31px;
+  background-color: transparent;
+  margin-left: -32px;
+  margin-right: -32px;
+  background-color: #fefcf7;
+}
