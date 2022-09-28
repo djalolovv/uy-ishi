@@ -79,7 +79,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.site__header .header__container .header__list {
+
+.header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,10 +88,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.site__header .header__container .header__list .header__item:not(:last-child) {
+
+.header__item:not(:last-child) {
   margin-right: 33px;
 }
-.site__header .header__container .header__list .header__link {
+
+.header__link {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
@@ -100,17 +103,20 @@ img {
   text-transform: uppercase;
   color: #83888f;
 }
-.site__header .header__container .header__list .header__link:hover {
+.header__link:hover {
   color: #333d4b;
 }
-.site__header .header__container .header__list .logo__img {
+
+.logo__img {
   max-width: 203px;
   height: 23px;
 }
-.site__header .header__container .header__list .logo {
+
+.logo {
   display: inline-block;
 }
-.site__header .header__container .navbar__btn {
+
+.navbar__btn {
   width: 20px;
   height: 20px;
   background-image: url("../../img/burger-img.svg");
@@ -118,24 +124,18 @@ img {
   background-position: center;
   background-color: transparent;
   border: none;
-  display: block;
-}
-.site__header .btn__div {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .hearder__div {
-    display: none;
-  }
-  .hearder__list {
+  .header__list {
     display: none;
   }
   .logo__img {
     max-width: 236px;
     height: 26px;
   }
-  .btn__div {
+  .navbar__btn {
     display: inline-block;
   }
 }
@@ -353,7 +353,8 @@ img {
   margin-bottom: 351px;
   max-width: 1280px;
 }
-.choose__container .choose__title {
+
+.choose__title {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
@@ -363,7 +364,8 @@ img {
   color: #fefcf7;
   margin-bottom: 32px;
 }
-.choose__container .choose__text {
+
+.choose__text {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -375,7 +377,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.choose__container .cards {
+
+.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,21 +387,21 @@ img {
           justify-content: center;
   margin-top: 80px;
 }
-.choose__container .cards .cards__choose {
+.cards .cards__choose {
   height: 382px;
   max-width: 350px;
   border-radius: 8px;
   background-color: #0e8784;
 }
-.choose__container .cards .cards__choose .choose__img {
+.cards .cards__choose .choose__img {
   max-width: 71px;
   height: 72px;
   margin-top: 72px;
 }
-.choose__container .cards .cards__choose:not(:first-child) {
+.cards .cards__choose:not(:first-child) {
   margin-left: 30px;
 }
-.choose__container .cards .choose__title {
+.cards .choose__title {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
@@ -407,7 +410,7 @@ img {
   color: #fefcf7;
   margin-top: 56px;
 }
-.choose__container .cards .choose__text {
+.cards .choose__text {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
