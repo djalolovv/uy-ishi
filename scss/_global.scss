@@ -5,6 +5,10 @@
 }
 body {
   font-family: "Barlow";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 a {
   text-decoration: none;

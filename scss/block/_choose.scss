@@ -5,7 +5,6 @@
   padding: 100px 0px 86px 0px;
   text-align: center;
   margin-bottom: 351px;
-  max-width: 1280px;
 }
 .choose__title {
   @include bag-title;
@@ -16,86 +15,108 @@
 .choose__text {
   @include texts;
   color: #fefcf7;
-  max-width: 540px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 540px;
 }
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-top: 80px;
-  .cards__choose {
-    height: 382px;
-    max-width: 350px;
-    border-radius: 8px;
-    background-color: $yashil;
-    .choose__img {
-      max-width: 71px;
-      height: 72px;
-      margin-top: 72px;
-    }
-  }
-  .cards__choose:not(:first-child) {
-    margin-left: 30px;
-  }
-  .choose__title {
-    @include bag-title;
-    color: #fefcf7;
-    margin-top: 56px;
-  }
-  .choose__text {
-    @include texts;
-    color: #fefcf7;
-    max-width: 255px;
-  }
+  max-width: 1110px;
 }
-@media only screen and (max-width: 768px) {
-  .cards-2 {
-    max-width: 573px;
-  }
-  .choose__container {
-    max-width: 688px;
-    .cards {
-      flex-direction: column;
-      max-width: 573px;
-      margin: 0 auto;
-      margin-top: 200px;
-    }
-  }
-  .choose__img {
-    max-width: 55px;
-    height: 66px;
-  }
+.choose__img {
+  max-width: 71px;
+  height: 72px;
+  margin-bottom: 56px;
 }
 .cards__choose {
-  height: 50px;
-  margin: 0 auto;
-  margin-bottom: -200px;
-  .choose__title {
-    margin: 0;
-  }
-  .card__texts {
-    max-width: 344px;
-  }
-  .choose__text {
-    max-width: 100%;
-  }
+  border-radius: 8px;
+  background-color: $yashil;
+  padding: 72px 48px 48px 47px;
+  margin-bottom: -250px;
 }
-@media only screen and (max-width: 375px) {
-  .cards__choose {
-    max-width: 279px;
-    margin: 0 auto;
-    margin-top: 25px;
-  }
+.card__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fefcf7;
+  margin-bottom: 24px;
+}
+.card__text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  max-width: 255px;
+}
+
+@media only screen and (max-width: 768px) {
   .choose__title {
-    margin-top: 64px;
-    font-size: 28px;
-    line-height: 28px;
-    max-width: 100%;
+    font-size: 32px;
   }
   .choose__text {
     font-size: 15px;
     line-height: 25px;
+  }
+  .cards {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 573px;
+    margin-bottom: -500px;
+  }
+  .cards__choose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 24px;
+    text-align: start;
+    padding: 41px 48px 41px 70px;
+  }
+  .card__text {
+    max-width: 344px;
+  }
+  .choose__img {
+    max-width: 55px;
+    height: 56px;
+    margin-top: 62px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .choose__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .card__text {
     max-width: 279px;
+  }
+  .cards {
+    max-width: 279px;
+    margin-bottom: -650px;
+  }
+  .cards__choose {
+    display: block;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 24px;
+    max-width: 100%;
+  }
+  .card__text {
+    max-width: 212px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+  }
+  .choose__img {
+    max-width: 71px;
+    height: 72px;
   }
 }
