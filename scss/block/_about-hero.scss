@@ -1,0 +1,53 @@
+.about-container {
+  margin-top: 48px;
+  padding: 137px 0px 137px 85px;
+  background-image: url("../../img/about-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 168px;
+}
+.about__title {
+  @include about-title;
+}
+.about__text {
+  @include texts;
+  color: #fefcf7;
+  margin-top: 24px;
+}
+.about__container-texts {
+  max-width: 445px;
+}
+@media only screen and (max-width: 768px) {
+  .about-container {
+    background-image: url("../../img/about-tablet-bg.png");
+    background-size: cover;
+  }
+  .about__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .about__container-texts {
+    max-width: 398px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about-container {
+    background-image: url("../../img/about-mobile-bg.png");
+    padding-left: 0;
+    text-align: center;
+    background-size: cover;
+  }
+  .about__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .about__container-texts {
+    max-width: 279px;
+    margin: 0 auto;
+  }
+}

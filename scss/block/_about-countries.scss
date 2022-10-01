@@ -1,0 +1,52 @@
+.countries__container {
+  padding-left: 88px;
+}
+.countries__title {
+  @include bag-title;
+  color: #83888f;
+  margin-bottom: 72px;
+}
+.countriest__img {
+  max-width: 41px;
+  height: 41px;
+  margin-bottom: 46px;
+}
+.countriest__title {
+  @include countriest-title;
+  margin-bottom: 24px;
+}
+.countriest__text {
+  @include countriest-texts;
+}
+.countrieas__list {
+  max-width: 1045px;
+  display: flex;
+  justify-content: space-between;
+}
+.countriest__item {
+  max-width: 272px;
+}
+@media only screen and (max-width: 375px) {
+  .about__countries {
+    text-align: center;
+  }
+  .countries__container {
+    padding-left: 0px;
+  }
+  .countrieas__list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .countriest__item {
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .countriest__title {
+    font-size: 28px;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+  .countriest__img {
+    margin-bottom: 48px;
+  }
+}
