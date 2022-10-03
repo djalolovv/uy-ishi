@@ -18,7 +18,7 @@
 .about__container-texts {
   max-width: 445px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .about-container {
     background-image: url("../../img/about-tablet-bg.png");
     background-size: cover;
@@ -35,7 +35,7 @@
     max-width: 398px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 650px) {
   .about-container {
     background-image: url("../../img/about-mobile-bg.png");
     padding-left: 0;

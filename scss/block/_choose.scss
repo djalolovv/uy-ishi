@@ -56,7 +56,7 @@
   max-width: 255px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
   .choose__title {
     font-size: 32px;
   }
@@ -90,7 +90,7 @@
     margin-top: 62px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 625px) {
   .choose__title {
     font-size: 28px;
     line-height: 28px;

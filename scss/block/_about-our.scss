@@ -24,7 +24,7 @@
 .our__texts {
   max-width: 539px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1065px) {
   .our__imgs {
     height: 470px;
   }
@@ -44,11 +44,12 @@
     flex-wrap: wrap;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 700px) {
   .about__our {
     flex-direction: column;
   }
   .our__imgs {
+    margin: 0 auto;
     margin-bottom: 48px;
     height: 407px;
   }

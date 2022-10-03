@@ -26,7 +26,7 @@
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1065px) {
   .collection__img {
     max-width: 689px;
     background-size: contain;
@@ -48,11 +48,12 @@
     }
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   .collection__list {
     text-align: center;
     max-width: 375px;
     justify-content: center;
+    margin: 0 auto;
   }
   .collection__item {
     max-width: 100%;
